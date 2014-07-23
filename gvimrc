@@ -35,7 +35,7 @@ set guioptions=aegitv
 set guitablabel=%{GShortTabLabel()}
 set guifont=DejaVu\ Sans\ Mono\ Oblique\ 10
 "change dir to current dir
-"autocmd BufReadPost * cd %:p:h
+autocmd GUIEnter * cd %:p:h
 autocmd GUIEnter * call SetWindows()
 nnoremap <CR> <Nop>
 nnoremap <C-S> <Esc>:w!<CR>
